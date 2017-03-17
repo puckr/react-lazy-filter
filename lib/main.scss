@@ -1,0 +1,59 @@
+$font : 'Roboto', sans-serif;
+$fontSize : 17px;
+$listItemSize: 19px;
+$textColor : #464646;
+$backColor : #F2F2F2;
+$borderColor : #BCBCBC;
+
+
+* {
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: $backColor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 23%;
+  margin: 50px auto;
+  h2 {
+    font-size: 35px;
+    color: $textColor;
+    font-weight: 400;
+    text-align: center;
+  }
+  input {
+    width: 100%;
+    font-size: $fontSize;
+    padding: 8px;
+    margin: 20px 0;
+    background-color: $backColor;
+    border: 2px solid #C6C6C6;
+    border-radius: 3px;
+  }
+  .list {
+    border: 2px solid #C6C6C6;
+    border-radius: 3px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: white;
+    height: 52vh;
+    width: 100%;
+    li {
+      list-style-type: none;
+      font-size: $listItemSize;
+      padding: 12px;
+      border-bottom: 1px solid $borderColor;
+      color: $textColor;
+    }
+  }
+}
